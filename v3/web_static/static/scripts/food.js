@@ -1,4 +1,6 @@
 $(document).ready(() => {
+    
+    // This is to show the average rates of the foods
     $(".star-val").each(function(i, obj) {
         let starValEach = $(this).text()
         console.log(starValEach, i)
@@ -17,5 +19,10 @@ $(document).ready(() => {
                 $(this).siblings(`#${parseInt(starValEach) + 2}`).css("color", "gold")
             }
         }
+    });
+
+    // This will listen to click events and go back to the previous page
+    $("#go-back").click(function (){
+        window.history.back();
     });
 })
