@@ -34,6 +34,8 @@ $(document).ready(() => {
     })
 
     $(".fa-solid").click(function(){
+        $("#loading-star").empty().html('<div class="spinner-border text-warning" \
+        role="status"><span class="visually-hidden">Loading...</span></div>')
         let starVal = $(this).attr("id")
         let userId = $("input[type='hidden']").attr("data-user-id")
         let foodId = $("input[type='hidden']").attr("data-food-id")
@@ -54,10 +56,12 @@ $(document).ready(() => {
                 $("#alert-user").empty().html('<div class="alert alert-success" \
                 role="alert">You rated this food successfully!</div>')
                 $(".fa-solid").mouseleave()
+                $("#loading-star").empty()
             },
             error: function(error){
                 console.log(error);
                 alert("Unknown error has occured! Please try again later", error)
+                $("#loading-star").empty()
             }
         });
         
