@@ -1,5 +1,6 @@
-$(document).ready(() => {
+$(document).ready(function() {
     $(".ser-btn").click(function(){
-        $("#off-can-triger").click()
+        let searchValue = $("#res-src").val()
+        $("#offcanvasExampleLabel").text(`Search results for ${searchValue}`)
     })
 })
