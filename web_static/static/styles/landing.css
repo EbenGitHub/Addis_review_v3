@@ -1,0 +1,323 @@
+main #sceine-one {
+    background-color: #003333;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
+}
+
+main #sceine-two {
+    background-color: #faa125;
+    height: 100vh;
+    width: 100vw;
+}
+
+main #sceine-three {
+    background-color: #43a450;
+    height: 100vh;
+    width: 100vw;
+}
+
+main #sceine-four {
+    background-color: #0c4d74;
+    height: 100vh;
+    width: 100vw;
+}
+
+main #sceine-five {
+    background-color: #440ea7;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #258383;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    padding-top: 10px;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+}
+
+
+html {
+        scroll-behavior: smooth;
+     }
+     nav {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 3;
+     }
+
+     nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 50px;
+        align-items: center;
+        padding-left: -10px;
+
+     }
+
+     nav ul li {
+        color: white;
+        margin: auto 5px;
+        text-decoration: none;
+        opacity: 0.75;
+        text-decoration: none;
+        margin: auto 5px;
+        border-bottom: 3px solid transparent;
+     }
+
+     
+     nav ul li:hover {
+        border-bottom: 3px solid white;
+        transition-duration: .2s;
+        opacity: 1;
+        margin-bottom: -3px;
+     }
+
+     nav ul a {
+        text-decoration: none;
+     }
+
+     nav i {
+        color: #d8e9e9;
+        padding-top: 5px;
+        font-size: larger;
+        visibility: hidden;
+     }
+
+    
+        .sceine-four .how-to {
+            display: flex;
+        }
+
+        #sceine-one {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #sceine-one #welcome {
+            color: wheat;
+        }
+
+        #sceine-one #welcome h1{
+            font-size: 2.5rem;
+        }
+
+        #sceine-one #welcome h1 span {
+            color:  #c5914c;
+            font-weight: bolder;
+        }
+
+        #sceine-one img {
+            transition-duration: .2s;
+            border-radius: 70%;
+            border: 5px solid #258383;
+        }
+
+        #sceine-one img:hover {
+            transform: scale(1.05);
+            transition-duration: .3s;
+            opacity: .75;
+
+        }
+
+        main section {
+            padding-top: 60px;
+        }
+
+        main section h2 {
+            display: block;
+            margin-left: 70px;
+            font-size: 2.1rem;
+        }
+
+        .container {
+            display: flex;
+            padding: 40px;
+        }
+         .container .cont-img {
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+         }
+
+         .container .cont-img div:first-of-type img {
+            opacity: 1;
+            width: 80%;
+            z-index: 1;
+            border-radius: 15%;
+         }
+
+         .container .cont-img div:last-of-type img {
+            width: 30%;
+            position: relative;
+            top: -60px;
+            left: -20px;
+            border-radius: 25%;
+         }
+
+         .bar:hover {
+            fill: brown;
+            cursor: pointer;
+         }
+
+         main section {
+            position: relative;
+            left: 0;
+            right: 0;
+         }
+
+         nav {
+            right: 0;
+         }
+         section h2 {
+            color: white;
+        }
+    
+        .cont-txt {
+            font-size: 2.2rem;
+            width: 50%;
+            line-height: 5.3rem;
+            color: rgb(20, 20, 57);
+        }
+    
+        #cont-svg {
+            padding-left: 90px;
+        }
+    
+        text {
+            font-weight: bolder;
+            fill: navy;
+        }
+        .sceine-four div img {
+            width: 100px !important;
+            height: 50px;
+        }
+
+        
+
+        .sceine-four {
+            display: flex;
+        }
+
+        .sceine-three .cont-txt span {
+            font-weight: bolder;
+        }
+
+        .how-to {
+            display: grid;
+            column-gap: 50px;
+            row-gap: 5px;
+            grid-template-columns: 20% .5fr .5fr;
+            margin-top: -70px;
+            padding: 10px;
+        }
+
+        #sceine-four h2 {
+            position: relative;
+            top: -30px;
+        }
+
+        .how-to .step-one {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            text-align: center;
+        }
+
+        .how-to .step-four {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .how-to .step-five {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .how-to .step-one, .how-to .step-five {
+            padding: 40px;
+        }
+
+        #sceine-four div p {
+            color: #ccc88f;
+            font-size: 1.5rem;
+        }
+
+        #sceine-four div a {
+            color: greenyellow;
+            text-decoration: none;
+            margin-left: 50px;
+            font-size: 1.2rem;
+        }
+
+        #sceine-four div a:hover {
+            color: yellow;
+            font-size: 1.25rem;
+            transition-duration: .3s;
+        }
+
+        .bang {
+            font-size: 2rem;
+            font-weight: bolder;
+            color: red;
+        }
+
+        #sceine-five div p span{
+            font-size: 1.6rem;
+            font-weight: bolder;
+        }
+
+        #sceine-five div ul li {
+            font-size: 1.2rem;
+            
+        }
+
+        #sceine-five .org {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 120px;
+            color: rgb(178, 227, 214);
+            
+        }
+
+        #sceine-five .org ul {
+            color: #e1d2bf;
+        }
+
+        .org #slogan, .org #school {
+            align-self: flex-end;
+            margin-right: 60px;
+        }
+
+        .fa-heart {
+            color: red;
+        }
+
+
+    
+
+     
