@@ -97,7 +97,7 @@ $(document).ready(() => {
                 $("#delete").text("")
                 $(".btn-outline-primary").prop("disabled", false)
                 $("#alert-user").empty().html('<div class="alert alert-danger"\
-                 role="alert">You review is deleted !</div>')
+                 role="alert">Your review is deleted !</div>')
             },
             error: function(error){
                 console.log(error);
