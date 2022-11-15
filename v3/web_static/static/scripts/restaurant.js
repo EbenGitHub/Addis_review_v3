@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    $(".ser-btn").click(function(){
-        let searchValue = $("#res-src").val()
-        $("#offcanvasExampleLabel").text(`Search results for ${searchValue}`)
+    $(".ser-nav").click(function(){
+        $("#res-src").focus()
     })
 })

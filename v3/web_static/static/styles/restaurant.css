@@ -6,4 +6,10 @@
     margin: 0;
     border: 0;
  }
+
+ #offcanvasExample {
+   background-color: #f5e8d3d3;
+   overflow-y: scroll;
+   overflow-x: hidden;
+ }
            
