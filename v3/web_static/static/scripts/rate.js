@@ -53,6 +53,7 @@ $(document).ready(() => {
                 $(".star-val").text(starVal)
                 $("#alert-user").empty().html('<div class="alert alert-success" \
                 role="alert">You rated this food successfully!</div>')
+                $(".fa-solid").mouseleave()
             },
             error: function(error){
                 console.log(error);
