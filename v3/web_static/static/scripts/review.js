@@ -32,6 +32,8 @@ $(document).ready(() => {
 
 // Listen to click events and post it on user page and send it to back
     $(".btn-outline-primary").click(function(){
+        $("#loading-cmt").empty().html('<div class="spinner-border text-warning" \
+        role="status"><span class="visually-hidden">Loading...</span></div>')
         let textVal = $(this).siblings("#input").val()
         console.log(textVal)
         let userId = $("input[type='hidden']").attr("data-user-id")
@@ -56,10 +58,12 @@ $(document).ready(() => {
                 $(".btn-outline-primary").prop("disabled", true)
                 $("#alert-user").empty().html('<div class="alert alert-success" \
                 role="alert">You reviewed this food successfully!</div>')
+                $("#loading-cmt").empty()
             },
             error: function(error){
                 console.log(error);
                 alert("Unknown error has occured! Please try again later", error)
+                $("#loading-cmt").empty()
             }
         });
         
@@ -78,6 +82,8 @@ $(document).ready(() => {
 
 // Detect if delete button is clicked and delete the text on the user page and send delete req to back
     $("#delete").click(function(){
+        $("#loading-dlt").empty().html('<div class="spinner-border text-warning" \
+        role="status"><span class="visually-hidden">Loading...</span></div>')
         let userId = $("input[type='hidden']").attr("data-user-id")
         let foodId = $("input[type='hidden']").attr("data-food-id")
         $.ajax({
@@ -98,10 +104,12 @@ $(document).ready(() => {
                 $(".btn-outline-primary").prop("disabled", false)
                 $("#alert-user").empty().html('<div class="alert alert-danger"\
                  role="alert">Your review is deleted !</div>')
+                 $("#loading-dlt").empty()
             },
             error: function(error){
                 console.log(error);
                 alert("Unknown error has occured! Please try again later", error)
+                $("#loading-dlt").empty()
             }
         });
         
