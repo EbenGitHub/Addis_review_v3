@@ -32,7 +32,7 @@ $(document).ready(() => {
 
 // Listen to click events and post it on user page and send it to back
     $(".btn-outline-primary").click(function(){
-        $("#loading-cmt").empty().html('<div class="spinner-border text-warning" \
+        $("#loading-cmt").empty().html('<div class="spinner-border text-primary" \
         role="status"><span class="visually-hidden">Loading...</span></div>')
         let textVal = $(this).siblings("#input").val()
         console.log(textVal)
@@ -82,7 +82,7 @@ $(document).ready(() => {
 
 // Detect if delete button is clicked and delete the text on the user page and send delete req to back
     $("#delete").click(function(){
-        $("#loading-dlt").empty().html('<div class="spinner-border text-warning" \
+        $("#loading-dlt").empty().html('<div class="spinner-border text-danger" \
         role="status"><span class="visually-hidden">Loading...</span></div>')
         let userId = $("input[type='hidden']").attr("data-user-id")
         let foodId = $("input[type='hidden']").attr("data-food-id")
