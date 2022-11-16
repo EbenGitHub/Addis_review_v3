@@ -68,12 +68,4 @@ $(document).ready(() => {
         
     })
 
-
-// This is for the review input pop up function
-    $('.btn-link').click(function(){
-        //$(this).siblings("input").css("animation-play-state", "running")  
-        $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
-        $("#input").css("visibility", "visible").css("height", "100px").css("width", "80%")  
-    })
-
 })
