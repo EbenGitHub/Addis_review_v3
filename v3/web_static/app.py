@@ -4,7 +4,13 @@ app = Flask(__name__)
 
 @app.route('/restaurants')
 def restaurants():
-    return render_template("restaurant.html")
+    restaurantId = "4567fhjklfbnmfj"
+    userId = "abenezer1234"
+    userName = "Abenezer"
+    restaurantName = "Tatot Kitfo bet"
+    restaurantDescription = "It is one of well known restaurant in the whole addis ababa. It is traditional restaurant"
+    restaurantImage = "https://media-cdn.tripadvisor.com/media/photo-s/09/55/74/73/washington-hotel.jpg"
+    return render_template("restaurant.html", userName=userName, restaurantId=restaurantId, userId=userId, restaurantName=restaurantName, restaurantDescription=restaurantDescription, restaurantImage=restaurantImage)
 
 @app.route('/login')
 def login():
@@ -20,11 +26,35 @@ def index():
 
 @app.route('/foods')
 def foods():
-    return render_template("food.html")
+    foodImage = "https://i.pinimg.com/originals/23/04/c4/2304c46180dd7647078e2c42f87a8747.jpg"
+    userId = request.args.get("user-id")
+    userName = "Abenezer"
+    restaurantName = "Tatot"
+    foodName = "Tibs"
+    print(userId)
+    foodId = "dfghjkyum"
+    foodRate = 3.4
+    foodDescription = "this is really sweet traditional ethiopian food"
+    foodPrice = 587
+    print(request.args.get("restaurant-id"))
+    return render_template("food.html", foodRate=foodRate, foodDescription=foodDescription, foodPrice=foodPrice, foodId=foodId, foodName=foodName, userId=userId, foodImage=foodImage, userName=userName, restaurantName=restaurantName)
 
 @app.route('/reviews')
 def reviews():
-    return render_template("review.html")
+    foodImage = "https://i.pinimg.com/originals/23/04/c4/2304c46180dd7647078e2c42f87a8747.jpg"
+    userId = request.args.get("user-id")
+    userName = "Abenezer"
+    restaurantName = "Tatot"
+    foodName = "Tibs"
+    print(userId)
+    foodId = "dfghjkyum"
+    foodRate = 3.4
+    foodDescription = "this is really sweet traditional ethiopian food"
+    foodPrice = 587
+    print(request.args.get("food-id"))
+    restaurantContact = "+251 93939483"
+    restaurantAddress = "Merkato silcha sefer"
+    return render_template("review.html", restaurantAddress=restaurantAddress, restaurantContact=restaurantContact, foodRate=foodRate, foodDescription=foodDescription, foodPrice=foodPrice, foodId=foodId, foodName=foodName, userId=userId, foodImage=foodImage, userName=userName, restaurantName=restaurantName)
 
 @app.route('/api/stats')
 def stats():

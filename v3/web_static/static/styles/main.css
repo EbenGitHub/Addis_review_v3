@@ -18,10 +18,21 @@ main h1 {
     
 }
 
+main .restaurants a {
+    text-decoration: none;
+    color: black;
+}
+
+main .restaurants a:hover {
+    text-decoration: none;
+    color: rgb(53, 26, 4);
+} 
+
 main .restaurants h2 {
     font-size: large;
     padding-left: 30px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 main .restaurants .restaurant .restr-descr {

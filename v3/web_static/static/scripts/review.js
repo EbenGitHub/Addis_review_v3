@@ -20,13 +20,24 @@ $(document).ready(() => {
         $(".btn-outline-success").text("Edit");
         $(".btn-outline-danger").text("Delete");
         $(".btn-outline-primary").prop("disabled", true)
+        $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
+        $("#input").css("visibility", "hidden").css("height", "0").css("width", "0")
+      } else {
+        $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
+        $("#input").css("visibility", "hidden").css("height", "0").css("width", "0")
+        $(".usr-comment").css("visibility", "hidden").css("height", "0").css("width", "0")
       }
+   })
+   .catch(error => {
+    alert(`You are not connected to the internet ! ${error}`)
    });
 
 
 // Listen to key press and make post button appear
-    $("#input").keypress(function(){
-        $(this).siblings(".btn-outline-primary").css("visibility", "visible")
+   $("#input").keypress(function(){
+        //$(this).siblings(".btn-outline-primary").css("visibility", "visible")
+        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto")
+        //$("#input").css("visibility", "hidden").css("height", "100px").css("width", "80%")
     })
 
 
@@ -59,10 +70,13 @@ $(document).ready(() => {
                 $("#alert-user").empty().html('<div class="alert alert-success" \
                 role="alert">You reviewed this food successfully!</div>')
                 $("#loading-cmt").empty()
+                $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
+                $("#input").css("visibility", "hidden").css("height", "0").css("width", "0")
+                $(".usr-comment").css("visibility", "visible").css("height", "auto").css("width", "auto")
             },
             error: function(error){
                 console.log(error);
-                alert("Unknown error has occured! Please try again later", error)
+                alert("You are not connected to the internet ! ", error)
                 $("#loading-cmt").empty()
             }
         });
@@ -76,6 +90,8 @@ $(document).ready(() => {
 
         $("#input").val(textVal)
         $(".btn-outline-primary").prop("disabled", false)
+        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto")
+        $("#input").css("visibility", "visible").css("height", "100px").css("width", "80%")
         $('input').focus();
     })
 
@@ -105,10 +121,11 @@ $(document).ready(() => {
                 $("#alert-user").empty().html('<div class="alert alert-danger"\
                  role="alert">Your review is deleted !</div>')
                  $("#loading-dlt").empty()
+                 $(".usr-comment").css("visibility", "hidden").css("height", "0").css("width", "0")
             },
             error: function(error){
                 console.log(error);
-                alert("Unknown error has occured! Please try again later", error)
+                alert("You are not connected to the internet !", error)
                 $("#loading-dlt").empty()
             }
         });

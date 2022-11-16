@@ -42,14 +42,17 @@
                     <li><a href="/#sceine-four">Help</a></li>
                 </ul>
                     <div class="ser-nav">
-                        <a class="btn btn-warning" id="offcanv" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                        SEARCH RESTAURANTS
-                        </a>
+                        <input id="res-src" type="text" placeholder="&nbsp &#xF002; &nbsp Search Restaurants here" style="font-family:Arial, FontAwesome">
                     </div>
 
                     <div class="user-ctl">
-                        <button class="btn btn-outline-danger">Log out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-                    </div>
+                      <span>
+                        <input type="hidden" data-user-id="{{userId}}">
+                        <i class="fa-regular fa-user"></i>
+                        <span>{{userName}}</span>
+                      </span>
+                      <button class="btn btn-outline-danger">Log out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                      </div>
                 
             </nav>
         </header>
@@ -80,234 +83,21 @@
 
 
 
-            <!-- offcanvas for search menu-->
+            <!-- offcanvas for search menu
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                  <!--<h5 class="offcanvas-title" id="offcanvasExampleLabel">Restaurants</h5>-->
-                    <div class="ser-nav">
-                        <input id="res-src" type="text" placeholder="&nbsp &#xF002; &nbsp Search Restaurants here" style="font-family:Arial, FontAwesome">
-                        <!--<button class="ser-btn">
-                            <i class="fa-solid fa-magnifying-glass" ></i>
-                        </button>-->
-                    </div>
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Restaurants</h5>
+                    
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <div id="search-results">
                     Results goes here.
                   </div>
-                  <img class="img-restr" src="https://media-cdn.tripadvisor.com/media/photo-s/09/55/74/73/washington-hotel.jpg" alt="Restaurant Image">
-
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
-                  <div id="search-results">
-                    Results goes here.
-                  </div>
+                  
                 </div>
               </div>
-            <!------------------------------->
+            ------------------------------->
 
 
             <h1> <i class="fa-solid fa-bell-concierge"></i> &nbsp RESTAURANTS </h1>
@@ -316,150 +106,25 @@
 
             <!-- Listing restaurants begins from here-->
             <div class="restaurants">
+
+              <!--Loop this using flask-->
+              <a href='/foods?restaurant-id={{restaurantId}}&user-id={{userId}}'>
                 <section class="restaurant">
-                    <h2>Tatot Kitfo bet &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
+                  <h2>{{restaurantName}} &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
+                  <div class="restr-descr">
                     <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
+                      <p class="description">{{restaurantDescription}}</p>
                     </article>
                     <div>
-                        <img class="img-restr" src="https://media-cdn.tripadvisor.com/media/photo-s/09/55/74/73/washington-hotel.jpg" alt="Restaurant Image">
+                      <img class="img-restr" src="{{restaurantImage}}" alt="Restaurant Image">
                     </div>
-                    </div>
-                    <div class="hr-line"></div>
+                  </div>
+                  <div class="hr-line"></div>
                 </section>
-                <section class="restaurant">
-                    <h2>Skylight Hotel &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
-                    <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
-                    </article>
-                    <div>
-                        <img class="img-restr" src="http://www.ethioembassy.org.uk/wp-content/uploads/2019/02/CT6A0117-1024x683.jpg" alt="Restaurant Image">
-                    </div>
-                    </div>
-                    <div class="hr-line"></div>
-                </section>
-                <section class="restaurant">
-                    <h2>Aksum Hotel &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
-                    <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
-                    </article>
-                    <div>
-                        <img class="img-restr" src="https://media-cdn.tripadvisor.com/media/photo-s/11/2d/ae/b0/axum-hotel-front-view.jpg" alt="Restaurant Image">
-                    </div>
-                    </div>
-                    <div class="hr-line"></div>
-                </section>
-                <section class="restaurant">
-                    <h2>Tatot Kitfo bet &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
-                    <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
-                    </article>
-                    <div>
-                        <img class="img-restr" src="https://blog.tiketi.com/wp-content/uploads/2020/05/048_Intercontinental_Addis_Hotel_HandZaround-1024x683.jpg" alt="Restaurant Image">
-                    </div>
-                    </div>
-                    <div class="hr-line"></div>
-                </section>
-                <section class="restaurant">
-                    <h2>Tatot Kitfo bet &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
-                    <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
-                    </article>
-                    <div>
-                        <img class="img-restr" src="https://blog.tiketi.com/wp-content/uploads/2020/05/048_Intercontinental_Addis_Hotel_HandZaround-1024x683.jpg" alt="Restaurant Image">
-                    </div>
-                    </div>
-                    <div class="hr-line"></div>
-                </section>
-                <section class="restaurant">
-                    <h2>Tatot Kitfo bet &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
-                    <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
-                    </article>
-                    <div>
-                        <img class="img-restr" src="https://blog.tiketi.com/wp-content/uploads/2020/05/048_Intercontinental_Addis_Hotel_HandZaround-1024x683.jpg" alt="Restaurant Image">
-                    </div>
-                    </div>
-                    <div class="hr-line"></div>
-                </section>
-                <section class="restaurant">
-                    <h2>Tatot Kitfo bet &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
-                    <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
-                    </article>
-                    <div>
-                        <img class="img-restr" src="https://blog.tiketi.com/wp-content/uploads/2020/05/048_Intercontinental_Addis_Hotel_HandZaround-1024x683.jpg" alt="Restaurant Image">
-                    </div>
-                    </div>
-                    <div class="hr-line"></div>
-                </section>
-                <section class="restaurant">
-                    <h2>Tatot Kitfo bet &nbsp &nbsp <i class="fa-solid fa-utensils"></i></h2>
-                    <div class="restr-descr">
-                    <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
-                    </article>
-                    <div>
-                        <img class="img-restr" src="https://blog.tiketi.com/wp-content/uploads/2020/05/048_Intercontinental_Addis_Hotel_HandZaround-1024x683.jpg" alt="Restaurant Image">
-                    </div>
-                    </div>
-                    <div class="hr-line"></div>
-                </section>
+              </a>
+              <!----------------------->
+
+
             </div>
 
         </main>

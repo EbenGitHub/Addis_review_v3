@@ -50,7 +50,7 @@ main .restaurant .img-restr {
 }
 
 .leave-comment input {
-    animation-name: comment;
+/*    animation-name: comment;
     animation-duration: .4s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
@@ -58,6 +58,17 @@ main .restaurant .img-restr {
     margin: 0;
     border: 0;
     border-radius: 0 15px 15px 15px;
+    */
+    background-color: #fdf7eb;
+    border: 2px solid #f8d796;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 4px 3px;
+    height: 100px;
+    width: 80%;
+}
+
+.leave-comment {
+    margin-left: 40px;
 }
 
 .leave-comment input:focus {
@@ -66,6 +77,7 @@ main .restaurant .img-restr {
 
 ::placeholder {
     padding-left: 40px;
+    color: black;
 }
 
 .btn-outline-primary {
@@ -86,8 +98,60 @@ main .restaurant .img-restr {
     margin-top: 40px;
 }
 
-.others-comment .comment-writer {
+.read-comment {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    
+}
+
+.read-comment #scr-cmt {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.read-comment #read-cmt {
+    color: #e98e1f !important;
+    font-weight: 550 !important;
+}
+
+.usr-comment {
     margin-left: 50px;
+    margin-top: 50px;
+    background-color: rgba(127, 255, 212, 0.342);
+    max-width:  70%;
+    padding: 10px;
+}
+
+.usr-comment #cmt-hd {
+    font-weight: 600;
+}
+
+.usr-comment .this-usr-comment {
+    background-color: rgb(253, 247, 155);
+    padding: 3px 5px;
+    border-radius: 9px;
+}
+
+.comment-writer{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 15% 10% 1fr;
+    box-shadow: 5px 5px 10px 5px gray;
+    margin: 5px auto;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    width: auto;
+}
+
+.comment-writer .fa-shield-heart {
+    color: #e98e1f !important;
+}
+
+.comment-writer .fa-comment {
+    color: rgb(46, 46, 226) !important;
+}
+
+.comment-writer .fa-user-tie {
+    color: rgb(52, 95, 3) !important;
 }
 
 .price-food {
@@ -104,8 +168,9 @@ main .restaurant .img-restr {
 }
 
 .price-food:hover {
-    background-color: rgb(235, 94, 43);
-    border: 3px dotted orange;
+    background-color: #faecd1;
+    color: #e98e1f;
+    border: 3px solid orange;
 }
 
 #img-prc {

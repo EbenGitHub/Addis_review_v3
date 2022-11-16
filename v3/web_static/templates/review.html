@@ -43,8 +43,12 @@
                 </ul>
 
                 <!--Review and Rate status shower-->
-                <div id="alert-user">
-                
+                <div id="user-ctl">
+                    <span>
+                        <input type="hidden" data-user-id="{{userId}}" data-food-id="{{foodId}}">
+                        <i class="fa-regular fa-user"></i> &nbsp;
+                        <span>{{userName}} &nbsp; &nbsp;</span>
+                    </span>
                 </div>
             </nav>
 
@@ -58,13 +62,13 @@
             <div class="break head-line">  
             </div>
 
-        <!--Previous alert place-->
-        <!--<div id="alert-user">
+
+            <div id="alert-user">
                 
-            </div>-->    
+            </div>   
 
 
-            <h1> <i class="fa-solid fa-bell-concierge"></i> &nbsp [Restaurant] FOODS </h1>
+            <h1> <i class="fa-solid fa-bell-concierge"></i> &nbsp {{restaurantName}} FOODS </h1>
         <br>
         <div class="hr-line"></div>
             
@@ -74,34 +78,32 @@
             <!-- Selected food goues here-->
             <div class="restaurants">
                 <section class="restaurant">
-                    <h2>Tibs &nbsp &nbsp <i class="fa-solid fa-utensils"></i> &nbsp;    </h2>
+                    <h2>{{foodName}} &nbsp &nbsp <i class="fa-solid fa-utensils"></i> &nbsp;    </h2>
                     <div class="food-spec">
                         <div id="img-prc">
-                        <img class="img-restr" src="https://i.pinimg.com/originals/23/04/c4/2304c46180dd7647078e2c42f87a8747.jpg" alt="Restaurant Image">
-                        <span class="price-food"><i class="fa-sharp fa-regular fa-dollar-sign"></i> &nbsp; 560</span>
-                        <div class="star-rate-noedit"><i class="fa-regular fa-star" id="1"></i><i class="fa-regular fa-star" id="2">
-                        </i><i class="fa-regular fa-star" id="3"></i><i class="fa-regular fa-star" id="4"></i>
-                        <i class="fa-regular fa-star" id="5"></i> &nbsp;  <span class="star-val-noedit">4.6</span></div>
+                        <img class="img-restr" src="{{foodImage}}" alt="Restaurant Image">
+                        <span class="price-food"><i class="fa-sharp fa-regular fa-dollar-sign"></i> &nbsp; {{foodPrice}}</span>
+                        <div class="star-rate-noedit">
+                            <i class="fa-regular fa-star" id="1"></i>
+                            <i class="fa-regular fa-star" id="2"></i>
+                            <i class="fa-regular fa-star" id="3"></i>
+                            <i class="fa-regular fa-star" id="4"></i>
+                        <i class="fa-regular fa-star" id="5"></i> &nbsp;  
+                        <span class="star-val-noedit">{{foodRate}}</span></div>
                     </div>
                         <div class="rest-add">
                             <div class="rest-cont">
-                                <i class="fa-solid fa-phone"></i>&nbsp; <span>+ 251 388290 3772 7378</span> &nbsp; <i class="fa-regular fa-copy" data-toggle="tooltip" title="click here to copy to the clipboard"></i>
+                                <i class="fa-solid fa-phone"></i>&nbsp; <span>{{restaurantContact}}</span> &nbsp; <i class="fa-regular fa-copy" data-toggle="tooltip" title="click here to copy to the clipboard"></i>
                             </div>
                             <div class="rest-loca">
-                                <i class="fa-solid fa-location-dot"></i>&nbsp; <span>Merkato silcha sefer</span> &nbsp; <i class="fa-regular fa-copy" data-toggle="tooltip" title="click here to copy to the clipboard"></i>
+                                <i class="fa-solid fa-location-dot"></i>&nbsp; <span>{{restaurantAddress}}</span> &nbsp; <i class="fa-regular fa-copy" data-toggle="tooltip" title="click here to copy to the clipboard"></i>
                             </div>
                         </div>
                         <div></div>
                     </div>
                     <div class="restr-descr">
                     <article>
-                        <p class="description">this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        this is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl jthis is di d djflsjdkj jsd jsl jsl j
-                        </p>
+                        <p class="description">{{foodDescription}}</p>
                     </article>
                     
                     </div>
@@ -121,26 +123,75 @@
                         <span id="loading-star"></span>
                     </div>
                     <button type="button" class="btn btn-link">Click here to leave a comment ...</button>
-                    
+                    <br>
                     <input type="text" placeholder="Write your comment .." id="input" tabindex="0">
                     <button type="submit" id="post-cmt" class="btn btn-outline-primary">Post</button>
                     <span id="loading-cmt"></span>
                     <!-- Hover effect data-toggle="tooltip" title="Hooray!"-->
 
                 </section>
+                <div class="usr-comment">
+                    <span id="cmt-hd">Your comment: &nbsp;</span>
+                    <span class="this-usr-comment"></span>
+                    <button type="button" class="btn btn-outline-success" id="edit"></button>
+                    <button type="button" class="btn btn-outline-danger" id="delete"></button>
+                    <span id="loading-dlt"></span>
+                    </div>
+
+
                 <section class="read-comment">
-                    <span>Read other user comments</span>
-                    <hr><div class="usr-comment">
-                        <span class="this-usr-comment"></span>
-                        <button type="button" class="btn btn-outline-success" id="edit"></button>
-                        <button type="button" class="btn btn-outline-danger" id="delete"></button>
-                        <span id="loading-dlt"></span>
-                        </div>
+                    <span id="read-cmt">Read other user comments</span>
+                    <hr>
+                    <div id="scr-cmt">
                         <div class="others-comment">
-                            <div><p>dksjdlfjsldjfls<span class="comment-writer">user A</span></p></div>
-                            <div><p>dksjdlfjsldjfls<span class="comment-writer">user A</span></p></div>
-                            <div><p>dksjdlfjsldjfls<span class="comment-writer">user A</span></p></div>
-                            <div><p>dksjdlfjsldjfls<span class="comment-writer">user A</span></p></div>
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Abrham</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 4</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-comment"></i><span> &nbsp; It was really delicious</span></span>
+                            </div>
+
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Tsige</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 1</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-comment"></i><span> &nbsp; I didn't like the way they cooked it</span></span>
+                            </div>
+
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Rawi</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 5</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-comment"></i><span> &nbsp; I would like to go again</span></span>
+                            </div>
+
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Simon</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 3</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                               <span><i class="fa-solid fa-comment"></i><span> &nbsp; It is not bad</span></span> 
+                            </div>
+
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Ikram</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 4</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-comment"></i><span> &nbsp; It was really delicious</span></span>
+                            </div>
+
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Abenezer</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 1</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-comment"></i><span> &nbsp; I didn't like the way they cooked it</span></span>
+                            </div>
+
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Math</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 5</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-comment"></i><span> &nbsp; I would like to go again</span></span>
+                            </div>
+
+                            <div  class="comment-writer">
+                                <span><i class="fa-solid fa-user-tie"></i><span> &nbsp; Lebron</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                <span><i class="fa-solid fa-shield-heart"></i><span> &nbsp; 3</span> &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                               <span><i class="fa-solid fa-comment"></i><span> &nbsp; It is not bad</span></span> 
+                            </div>
+                        </div>
                         </div>
                     <hr>
                 </section>
