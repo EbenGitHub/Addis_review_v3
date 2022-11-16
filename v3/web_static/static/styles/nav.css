@@ -106,7 +106,7 @@ nav ul li:hover, nav ul li a:hover {
     transition-duration: .5s;
 }
 
-.btn-outline-danger {
+.btn-outline-danger, nav .user-ctl a {
     color: rgb(168, 30, 30);
     font-weight: bolder;
 }
