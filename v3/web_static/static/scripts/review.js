@@ -20,12 +20,12 @@ $(document).ready(() => {
         $(".btn-outline-success").text("Edit");
         $(".btn-outline-danger").text("Delete");
         $(".btn-outline-primary").prop("disabled", true)
-        $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
-        $("#input").css("visibility", "hidden").css("height", "0").css("width", "0")
+        $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
+        $("#input").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
       } else {
-        $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
-        $("#input").css("visibility", "hidden").css("height", "0").css("width", "0")
-        $(".usr-comment").css("visibility", "hidden").css("height", "0").css("width", "0")
+        $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
+        $("#input").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
+        $(".usr-comment").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
       }
    })
    .catch(error => {
@@ -37,7 +37,7 @@ $(document).ready(() => {
 // Listen to key press and make post button appear
    $("#input").keypress(function(){
         //$(this).siblings(".btn-outline-primary").css("visibility", "visible")
-        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto")
+        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto").css("padding", "auto").css("margin", "auto")
         //$("#input").css("visibility", "hidden").css("height", "100px").css("width", "80%")
     })
 
@@ -71,9 +71,9 @@ $(document).ready(() => {
                 $("#alert-user").empty().html('<div class="alert alert-success" \
                 role="alert">You reviewed this food successfully!</div>')
                 $("#loading-cmt").empty()
-                $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
-                $("#input").css("visibility", "hidden").css("height", "0").css("width", "0")
-                $(".usr-comment").css("visibility", "visible").css("height", "auto").css("width", "auto")
+                $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
+                $("#input").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
+                $(".usr-comment").css("visibility", "visible").css("height", "auto").css("width", "auto").css("padding", "auto").css("margin", "auto")
                 const myTimeout = setTimeout(clearAlert, 3000);
                 
 
@@ -94,8 +94,8 @@ $(document).ready(() => {
 
         $("#input").val(textVal)
         $(".btn-outline-primary").prop("disabled", false)
-        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto")
-        $("#input").css("visibility", "visible").css("height", "100px").css("width", "80%")
+        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto").css("padding", "auto").css("margin", "auto")
+        $("#input").css("visibility", "visible").css("height", "100px").css("width", "80%").css("padding", "auto").css("margin", "25px auto")
         $('input').focus();
     })
 
@@ -125,7 +125,7 @@ $(document).ready(() => {
                 $("#alert-user").empty().html('<div class="alert alert-danger"\
                  role="alert">Your review is deleted !</div>')
                  $("#loading-dlt").empty()
-                 $(".usr-comment").css("visibility", "hidden").css("height", "0").css("width", "0")
+                 $(".usr-comment").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "0").css("margin", "0")
                  const myTimeout = setTimeout(clearAlert, 3000);
             },
             error: function(error){
@@ -177,8 +177,8 @@ $(document).ready(() => {
 // This is for the review input pop up function
 $('.btn-link').click(function(){
     //$(this).siblings("input").css("animation-play-state", "running")  
-    $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
-    $("#input").css("visibility", "visible").css("height", "100px").css("width", "80%")  
+    $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0").css("padding", "auto").css("margin", "auto")
+    $("#input").css("visibility", "visible").css("height", "100px").css("width", "80%").css("padding", "auto").css("margin", "auto")
 })
 
 
