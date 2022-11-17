@@ -405,9 +405,86 @@ html {
             background-color:orange;
         }
 
-        main p {
-            color: black;
+        main #sceine-one #welcome h1 {
+            font-size: 5em;
+            text-align: center;
         }
+
+        main #sceine-one #welcome h1 span {
+            color: black;
+            font-weight: 5em;
+            font-size: 2em;
+        }
+
+        main #sceine-one #welcome p {
+            font-size: 3em;
+            color: rgb(3, 21, 59);
+            margin-left: 5%;
+            margin-top: 20%;
+        }
+
+        main #sceine-two h2, main #sceine-three h2, main #sceine-four h2, main #sceine-five h2{
+            font-size: 6em;
+        }
+
+        main #sceine-two p, main #sceine-three p{
+            font-size: 2em;
+            line-height: 2em;
+        }
+
+        main #sceine-four .how-to #step-one, main #sceine-four .how-to .step-two, main #sceine-four .how-to .step-three,  main #sceine-four .how-to .step-four,  main #sceine-four .how-to .step-five  {
+            flex-direction: column;
+            justify-self: center;
+        }
+
+        main #sceine-four .how-to #step-one .img-cnt, main #sceine-four .how-to .step-two .img-cnt, main #sceine-four .how-to .step-three .img-cnt, main #sceine-four .how-to .step-four .img-cnt, main #sceine-four .how-to .step-five .img-cnt   {
+            height: 50%;
+        }
+
+        main #sceine-four .how-to #step-one .img-cnt, main #sceine-four .how-to #step-one .img-cnt img {
+            margin-left: 25%;
+        }
+
+        main #sceine-four .how-to .step-two .img-cnt, img {
+            margin-left: 25%;
+        }
+
+        main #sceine-four .txt-cnt {
+            margin: auto 2.5em;
+        }
+
+        main #sceine-four .how-to #step-one .txt-cnt {
+            margin-top: -20%;
+        }
+
+        main #sceine-four .how-to #step-one .txt-cnt .cntr {
+            font-size: 20em !important;
+            padding-top: -10%;
+        }
+
+        main #sceine-four .how-to .step-four .txt-cnt .bang {
+            font-size: 1em;
+        }
+
+        main #sceine-four .txt-cnt p, main #sceine-four .txt-cnt a {
+            font-size: 5em;
+        }
+
+        main #sceine-five .org div p span {
+            font-size: 5em;
+        }
+
+        main #sceine-five .org ul li {
+            font-size: 3em;
+            line-height: 1.5em;
+        }
+
+        main #sceine-five #slogan, main #sceine-five #school {
+            font-size: 2em;
+        }
+
+
+    
 
         main #sceine-one, main #sceine-two, main #sceine-three, main #sceine-four {
             background-color: rgb(255, 145, 0) !important;
@@ -429,7 +506,7 @@ html {
         }
 
         #sceine-three {
-            height: 140vh !important;
+            height: 100vh !important;
         }
 
         #sceine-three .container {
