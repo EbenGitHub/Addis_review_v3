@@ -1,5 +1,6 @@
 main #sceine-one {
-    background-color: #003333;
+    /*background-color: #003333;*/
+    background: linear-gradient(40deg, orange,orangered);
     height: 100vh;
     width: 100vw;
     padding-top: 60px;
@@ -33,7 +34,7 @@ nav {
     text-align: center;
     font-weight: bolder;
     font-size: larger;
-    background-color: #258383;
+    background: linear-gradient(40deg, orange,orangered);
     position: fixed;
     top: 0;
     left: 0;
@@ -128,7 +129,7 @@ html {
         #sceine-one img {
             transition-duration: .2s;
             border-radius: 70%;
-            border: 5px solid #258383;
+            border: 5px solid orangered;
         }
 
         #sceine-one img:hover {
