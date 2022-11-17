@@ -37,7 +37,7 @@ $(document).ready(() => {
 // Listen to key press and make post button appear
    $("#input").keypress(function(){
         //$(this).siblings(".btn-outline-primary").css("visibility", "visible")
-        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto").css("padding", "auto").css("margin", "auto")
+        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto").css("padding", "10px").css("margin", "10px")
         //$("#input").css("visibility", "hidden").css("height", "100px").css("width", "80%")
     })
 
@@ -94,7 +94,7 @@ $(document).ready(() => {
 
         $("#input").val(textVal)
         $(".btn-outline-primary").prop("disabled", false)
-        $(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto").css("padding", "auto").css("margin", "auto")
+        //$(".btn-outline-primary").css("visibility", "visible").css("height", "auto").css("width", "auto").css("padding", "auto").css("margin", "auto")
         $("#input").css("visibility", "visible").css("height", "100px").css("width", "80%").css("padding", "auto").css("margin", "25px auto")
         $('input').focus();
     })
