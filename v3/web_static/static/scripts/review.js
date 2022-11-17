@@ -73,6 +73,9 @@ $(document).ready(() => {
                 $(".btn-outline-primary").css("visibility", "hidden").css("height", "0").css("width", "0")
                 $("#input").css("visibility", "hidden").css("height", "0").css("width", "0")
                 $(".usr-comment").css("visibility", "visible").css("height", "auto").css("width", "auto")
+                const myTimeout = setTimeout(clearAlert, 3000);
+                
+
             },
             error: function(error){
                 console.log(error);
@@ -122,6 +125,7 @@ $(document).ready(() => {
                  role="alert">Your review is deleted !</div>')
                  $("#loading-dlt").empty()
                  $(".usr-comment").css("visibility", "hidden").css("height", "0").css("width", "0")
+                 const myTimeout = setTimeout(clearAlert, 3000);
             },
             error: function(error){
                 console.log(error);
@@ -186,6 +190,12 @@ $('.btn-link').click(function(){
     //Stop the event from propogation to other handlers
     event.stopPropagation();
   });
+
+
+// Clear alert on timer 
+function clearAlert() {
+    $("#alert-user").empty()
+}
    
 
 // This will listen to click events and go back to the previous page

@@ -57,6 +57,7 @@ $(document).ready(() => {
                 role="alert">You rated this food successfully!</div>')
                 $(".fa-solid").mouseleave()
                 $("#loading-star").empty()
+                const myTimeout = setTimeout(clearAlert, 3000);
             },
             error: function(error){
                 console.log(error);
@@ -67,5 +68,10 @@ $(document).ready(() => {
         
         
     })
+
+    // Clear alert on timer 
+    function clearAlert() {
+        $("#alert-user").empty()
+    }
 
 })
