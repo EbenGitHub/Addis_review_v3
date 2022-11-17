@@ -30,6 +30,7 @@ $(document).ready(() => {
    })
    .catch(error => {
     alert(`You are not connected to the internet ! ${error}`)
+    alert(`Failed to load your data! `)
    });
 
 
