@@ -403,6 +403,12 @@ html {
      @media (width < 1000px) {
         nav {
             background-color:orange;
+            height: 6%;
+        }
+
+        nav ul div a li {
+            font-size: 3em;
+            margin: auto .5em;
         }
 
         main #sceine-one #welcome h1 {
