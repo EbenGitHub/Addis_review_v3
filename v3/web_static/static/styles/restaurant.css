@@ -1,17 +1,17 @@
- #off-can-triger {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
- }
+#off-can-triger {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
- #offcanvasExample {
-   background-color: #f5e8d3d3;
-   overflow-y: scroll;
-   overflow-x: hidden;
- }
+#offcanvasExample {
+  background-color: #f5e8d3d3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 /*
  #time {
@@ -30,4 +30,3 @@
   border: 2px solid rgb(192, 132, 19);
  }
  */
-           
