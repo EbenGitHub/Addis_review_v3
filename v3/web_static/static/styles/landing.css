@@ -460,6 +460,10 @@ text {
     font-size: 3.5rem;
   }
 
+  .cont-img, .cont-svg {
+    display: none;
+  }
+
   main #sceine-one #welcome h1 {
     font-size: 5em;
     text-align: center;
