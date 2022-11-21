@@ -427,14 +427,14 @@ text {
 
 @media (width < 1000px) {
   nav {
-    height: 5%;
+    height: 5.5%;
     overflow: hidden;
     display: block;
     transition-duration: .5s;
   }
 
   .show {
-    height: 25%;
+    height: auto;
   }
 
   .hide {
