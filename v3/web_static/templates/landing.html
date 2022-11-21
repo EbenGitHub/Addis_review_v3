@@ -4,6 +4,7 @@
     <title>welcome</title>
     <!--Import necessary css and scss files-->
     <link rel="stylesheet" href="../static/styles/landing.css" />
+    <link rel="stylesheet" href="../static/styles/normalize.css" />
     <link rel="icon" href="../static/images/mini-icon-2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +18,7 @@
     ></script>
     <script src="../static/scripts/external_libraries.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/scripts/landing.js"></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
   </head>
 
@@ -26,8 +28,12 @@
     <header>
       <!--Navigation bar-->
       <nav>
-        <i class="fa-solid fa-bars"></i>
         <ul>
+          <div id="menu">
+            <li>
+              <i class="fa-solid fa-bars"></i>
+            </li>
+          </div>
           <div class="navbar">
             <a href="#sceine-two" class="nav-link nav-link-fade-up">
               <li>Info</li>
@@ -69,15 +75,21 @@
         <h2>Where am I &nbsp; <i class="fa-solid fa-question"></i></h2>
         <div class="container">
           <div class="cont-img">
-            <div>
+            <div id="img-shw">
               <img
-                src="https://chorus.stimg.co/23213872/100ethiopian020622.jpg?fit=crop&crop=faces"
+                src="../static/images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg"
                 alt=""
+                id="img-one"
               />
-            </div>
-            <div>
               <img
-                src="https://images.deliveryhero.io/image/fd-my/LH/wnjr-hero.jpg"
+                src="../static/images/chad-montano-MqT0asuoIcU-unsplash.jpg"
+                alt=""
+                id="img-two"
+              />
+              <img
+                src="../static/images/imani-manyara-Bfy8z7EOyx4-unsplash.jpg"
+                alt=""
+                id="img-three"
               />
             </div>
           </div>
