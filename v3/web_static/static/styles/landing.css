@@ -460,10 +460,6 @@ text {
     font-size: 3.5rem;
   }
 
-  .cont-img, .cont-svg {
-    display: none;
-  }
-
   main #sceine-one #welcome h1 {
     font-size: 5em;
     text-align: center;
@@ -473,7 +469,7 @@ text {
   }
 
   main #sceine-one #welcome h1 span {
-    color: black;
+    color: rgb(206, 151, 11);
     font-weight: 5em;
     font-size: 2em;
   }
@@ -590,6 +586,10 @@ text {
   #sceine-three .container {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  #sceine-three .container #cont-svg{
+    display: none;
   }
 
   #sceine-three .container .cont-txt,
