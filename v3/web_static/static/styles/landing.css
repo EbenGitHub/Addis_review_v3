@@ -2,7 +2,6 @@ main #sceine-one {
   /*background-color: #003333;*/
   background: url(../images/biruk-gashawbeza-Fq-5Sd64p0Q-unsplash.jpg);
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
   padding-top: 60px;
@@ -101,7 +100,6 @@ nav ul #menu {
   display: none;
 }
 
-
 .sceine-four .how-to {
   display: flex;
 }
@@ -115,7 +113,6 @@ nav ul #menu {
 
 #sceine-one #welcome {
   color: wheat;
-  
 }
 
 #sceine-one #welcome h1 {
@@ -130,7 +127,7 @@ nav ul #menu {
   font-size: 1.5rem;
   background-color: darkgray;
   text-shadow: 4px 4px 16px black;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 #sceine-one #welcome h1 span {
@@ -179,9 +176,8 @@ main section h2 {
 }
 
 .container .cont-img #img-shw {
-    position: relative;
+  position: relative;
 }
-
 
 .container .cont-img #img-shw #img-two {
   position: absolute;
@@ -194,10 +190,11 @@ main section h2 {
   top: 20%;
 }
 
-#sceine-three .container #cont-svg, #sceine-three .container .cont-txt {
+#sceine-three .container #cont-svg,
+#sceine-three .container .cont-txt {
   background-color: whitesmoke;
-  opacity: .65;
-} 
+  opacity: 0.65;
+}
 
 .bar:hover {
   fill: brown;
@@ -427,10 +424,10 @@ text {
 
 @media (width < 1000px) {
   nav {
-    height: 5.5%;
+    height: 5rem;
     overflow: hidden;
     display: block;
-    transition-duration: .5s;
+    transition: height 0.5s;
   }
 
   .show {
@@ -438,7 +435,7 @@ text {
   }
 
   .hide {
-    height: 5%;
+    height: 5rem;
   }
 
   nav ul {
@@ -448,7 +445,7 @@ text {
 
   nav ul div a li {
     font-size: 3em;
-    margin: .5rem auto;
+    margin: 0.5rem auto;
     border-bottom: 5px solid white;
   }
 
@@ -588,7 +585,7 @@ text {
     flex-direction: column-reverse;
   }
 
-  #sceine-three .container #cont-svg{
+  #sceine-three .container #cont-svg {
     display: none;
   }
 
