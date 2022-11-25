@@ -5,6 +5,7 @@
     <!--Import necessary css and scss files-->
     <link rel="stylesheet" href="../static/styles/landing.css" />
     <link rel="stylesheet" href="../static/styles/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="../static/images/mini-icon-2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,7 +68,7 @@
       <section id="sceine-one">
         <div>
           <img
-            src="../static/images/icon.png"
+            src="../static/images/webp/logo.webp"
             class="animate__animated animate__swing"
           />
         </div>
@@ -85,26 +86,18 @@
       <section id="sceine-two">
         <h2>Where am I &nbsp; <i class="fa-solid fa-question"></i></h2>
         <div class="container">
-          <div class="cont-img">
+          <div class="cont-img" data-aos="fade-up">
             <div id="img-shw">
+              <img src="../static/images/webp/veges.webp" alt="" id="img-one" />
+              <img src="../static/images/webp/pizza.webp" alt="" id="img-two" />
               <img
-                src="../static/images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg"
-                alt=""
-                id="img-one"
-              />
-              <img
-                src="../static/images/chad-montano-MqT0asuoIcU-unsplash.jpg"
-                alt=""
-                id="img-two"
-              />
-              <img
-                src="../static/images/imani-manyara-Bfy8z7EOyx4-unsplash.jpg"
+                src="../static/images/webp/fries.webp"
                 alt=""
                 id="img-three"
               />
             </div>
           </div>
-          <div class="cont-txt">
+          <div class="cont-txt" data-aos="fade-left">
             <p>
               This is a website for choosing delicious foods &nbsp;
               <i class="fa-solid fa-bowl-food"></i>. You can review and rate
@@ -117,7 +110,7 @@
       <!--Services page-->
       <section id="sceine-three">
         <h2>Our Customers and Services</h2>
-        <div class="container">
+        <div class="container" data-aos="flip-up">
           <div id="cont-svg">
             <!--SVG D3 Graph for this page-->
             <script src="../static/scripts/svg.js"></script>
@@ -152,8 +145,8 @@
                   <i class="fa-solid fa-plus"></i></span
               ></a>
             </div>
-            <div class="img-cnt">
-              <img src="../static/images/signup-mini.png" />
+            <div class="img-cnt" data-aos="fade-up-left">
+              <img src="../static/images/webp/signup.webp" />
             </div>
           </div>
           <div class="step-two">
@@ -161,8 +154,8 @@
               <p class="cntr">2</p>
               <p>Step 2: Choose you restaurant you want to dine at</p>
             </div>
-            <div class="img-cnt">
-              <img src="../static/images/restaurant-mini.png" />
+            <div class="img-cnt" data-aos="fade-up-right">
+              <img src="../static/images/webp/restaurant.webp" />
             </div>
           </div>
           <div class="step-three">
@@ -173,8 +166,8 @@
                 <br /><br />Click on the food to see more about the food.
               </p>
             </div>
-            <div class="img-cnt">
-              <img src="../static/images/food-mini.png" />
+            <div class="img-cnt" data-aos="fade-up-left">
+              <img src="../static/images/webp/food.webp" />
             </div>
           </div>
           <div class="step-four">
@@ -189,8 +182,8 @@
                 <br /><br />and see the address of the restaurant.
               </p>
             </div>
-            <div class="img-cnt">
-              <img src="../static/images/review-mini.png" />
+            <div class="img-cnt" data-aos="fade-up-right">
+              <img src="../static/images/webp/review.webp" />
             </div>
           </div>
           <div class="step-five">
@@ -202,8 +195,8 @@
               </p>
               <a href="/signup"><span>Create new account</span></a>
             </div>
-            <div class="img-cnt">
-              <img src="../static/images/review-write-mini.png" />
+            <div class="img-cnt" data-aos="fade-up-left">
+              <img src="../static/images/webp/review-write.webp" />
             </div>
           </div>
         </div>
@@ -283,5 +276,9 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

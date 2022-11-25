@@ -1,3 +1,5 @@
+@import url(./normalize.css);
+
 :root {
   --color-primary: #f79205;
   --color-secondary: #c6851d;
@@ -8,7 +10,7 @@
 }
 
 .logo {
-  background: url(../images/icon.png);
+  background: url(../images/webp/logo.webp);
   background-size: 100%;
   border-radius: 50%;
 

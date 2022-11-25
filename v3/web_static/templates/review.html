@@ -67,8 +67,9 @@
           <span>
             <input
               type="hidden"
-              data-user-id="{{userId}}"
-              data-food-id="{{foodId}}"
+              data-user-id="5f040b4a-8faf-4282-9ce5-4c032d2d0d3c"
+              data-food-id="bbe14636-19d8-43d0-8553-baeb97509084"
+              data-review-id=""
             />
             <i class="fa-regular fa-user"></i> &nbsp;
             <span>{{userName}} &nbsp; &nbsp;</span>
@@ -156,6 +157,7 @@
             <i class="fa-solid fa-star" id="4"></i>
             <i class="fa-solid fa-star" id="5"></i> &nbsp;
             <span class="star-val"></span>
+            <button type="button" class="btn btn-dark">RESET</button>
             <span id="loading-star"></span>
           </div>
           <button type="button" class="btn btn-link">
@@ -187,6 +189,9 @@
             class="btn btn-outline-danger"
             id="delete"
           ></button>
+          <button type="button" id="danger-btn">
+            <i class="fa-solid fa-triangle-exclamation"></i>RESET ALL
+          </button>
           <span id="loading-dlt"></span>
         </div>
 

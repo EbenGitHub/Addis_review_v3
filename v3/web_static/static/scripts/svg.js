@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 // Fetch the data for the landing page statistics
-   fetch('/api/stats')
+   fetch('http://18.205.104.232:5001/api/v1/stats')
    .then(response => response.json())
    .then(data => {
       let infoData = JSON.stringify(data)
@@ -34,15 +34,15 @@ $(document).ready(function(){
          .data(dataset)
          .enter()
          .append("text")
-         .text((d, i) => nameset[i])
+         .text((d, i) => `${nameset[i]}s`)
          .attr("x", (d, i) => i * 90)
          .attr("y", (d, i) => h - (d * 3 + 9))
 
 
-         $("#user-number").text(dataset[nameset.indexOf("Users")] - 1);
-         $("#food-number").text(dataset[nameset.indexOf("Foods")] - 1);
-         $("#restaurant-number").text(dataset[nameset.indexOf("Restaurants")] - 1);
-         $("#review-number").text(dataset[nameset.indexOf("Reviews")]);
+         $("#user-number").text(dataset[nameset.indexOf("User")] - 1);
+         $("#food-number").text(dataset[nameset.indexOf("Food")] - 1);
+         $("#restaurant-number").text(dataset[nameset.indexOf("Restaurant")] - 1);
+         $("#review-number").text(dataset[nameset.indexOf("Review")]);
    })
 })
 
